@@ -1,0 +1,49 @@
+# Gradle / Java
+.gradle/
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+*.class
+*.jar
+*.war
+*.ear
+hs_err_pid*
+replay_pid*
+
+# IDE / editor
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+*.lnk
+
+# jpackage / packaging
+**/dist/
+out/
+*.exe
+!gradle/wrapper/**
+
+# Local env / secrets / user data
+.env
+.env.*
+*.log
+.houdini-monitor/
+**/.houdini-monitor/
+
+# Agent / local working notes (not part of the public product)
+MEMORY.md
+.agent/
+.agents/
+AgentStores/
+.cursor/
+.specify/integration.json
+.specify/init-options.json
+.specify/integrations/cursor-agent.manifest.json
+.specify/extensions/.registry
+
+# OS junk
+desktop.ini
+~$*
