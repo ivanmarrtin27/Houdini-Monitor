@@ -33,15 +33,13 @@ out/
 .houdini-monitor/
 **/.houdini-monitor/
 
-# Agent / local working notes (not part of the public product)
+# Local working notes / tool config (not part of the public product)
 MEMORY.md
 .agent/
 .agents/
 AgentStores/
-.cursor/
 .specify/integration.json
 .specify/init-options.json
-.specify/integrations/cursor-agent.manifest.json
 .specify/extensions/.registry
 
 # OS junk

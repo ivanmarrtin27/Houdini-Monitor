@@ -19,9 +19,6 @@ requires:
     # core commands referenced in ``steps``.
     any:
       - "alquimia"
-      - "claude"
-      - "copilot"
-      - "gemini"
       - "opencode"
 
 inputs:
@@ -32,7 +29,7 @@ inputs:
   integration:
     type: string
     default: "auto"
-    prompt: "Integration to use (e.g. claude, copilot, gemini; 'auto' uses the project's initialized integration)"
+    prompt: "Integration to use ('auto' uses the project's initialized integration)"
   speckit_review_spec_verdict:
     type: string
     default: ""

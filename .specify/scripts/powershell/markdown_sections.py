@@ -61,14 +61,14 @@ _INLINE_LINK = re.compile(r"\[([^\]]*)\]\(")
 
 def _link_labels(text: str) -> str:
     parts: list[str] = []
-    cursor = 0
-    while cursor < len(text):
-        code = _CODE_SPAN.match(text, cursor)
+    pos = 0
+    while pos < len(text):
+        code = _CODE_SPAN.match(text, pos)
         if code:
             parts.append(code[0])
-            cursor = code.end()
+            pos = code.end()
             continue
-        link = _INLINE_LINK.match(text, cursor)
+        link = _INLINE_LINK.match(text, pos)
         if link:
             depth = 1
             end = link.end()
@@ -83,10 +83,10 @@ def _link_labels(text: str) -> str:
                 end += 1
             if depth == 0:
                 parts.append(link[1])
-                cursor = end
+                pos = end
                 continue
-        parts.append(text[cursor])
-        cursor += 1
+        parts.append(text[pos])
+        pos += 1
     return "".join(parts)
 
 
