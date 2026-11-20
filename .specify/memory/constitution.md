@@ -78,8 +78,8 @@ Rationale: YAGNI keeps the portfolio focused while allowing intentional Phase gr
 
 1. Follow Spec Kit order: constitution → specify → clarify → plan → tasks →
    (analyze) → implement → converge until Converged.
-2. One Spec Kit task at a time; update `MEMORY.md` after meaningful sessions
-   (max ~50 lines).
+2. One Spec Kit task at a time; keep local session notes short if you use them
+   (max ~50 lines; not part of the public tree).
 3. Ask before adding dependencies beyond the agreed stack, before data-model
    changes that affect specs, and before elevated kill behavior.
 4. Verification: unit tests green for logic tasks; compile/run app for UI tasks;
@@ -87,14 +87,14 @@ Rationale: YAGNI keeps the portfolio focused while allowing intentional Phase gr
 
 ## Governance
 
-This constitution supersedes informal practices and agent improvisation.
+This constitution supersedes informal practices and ad-hoc scope expansion.
 Amendments MUST update this file with semantic versioning:
 - MAJOR: remove/redefine principles incompatibly.
 - MINOR: add or materially expand a principle/section.
 - PATCH: clarifications and non-semantic wording.
 
-Compliance is reviewed at plan, implement, and converge steps. Runtime agent
-guidance lives in `AGENTS.md` and session memory in `MEMORY.md`; both MUST remain
-consistent with this constitution.
+Compliance is reviewed at plan, implement, and converge steps. Local working
+notes (if any) MUST remain consistent with this constitution and are not
+published with the product tree.
 
 **Version**: 1.1.0 | **Ratified**: 2026-11-19 | **Last Amended**: 2026-11-19

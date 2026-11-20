@@ -35,11 +35,16 @@ out/
 
 # Local working notes / tool config (not part of the public product)
 MEMORY.md
+AGENTS.md
+RULE.md
+.cursor/
 .agent/
 .agents/
+.opencode/
 AgentStores/
 .specify/integration.json
 .specify/init-options.json
+.specify/integrations/cursor-agent.manifest.json
 .specify/extensions/.registry
 
 # OS junk

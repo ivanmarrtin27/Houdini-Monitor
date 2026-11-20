@@ -89,6 +89,14 @@ Salida esperada:
 app\build\jpackage\HoudiniMonitor\HoudiniMonitor.exe
 ```
 
+Los artefactos `build/`, `dist/` y el `.exe` no se versionan (regenerables). Tras empaquetar, puedes copiar jar/launcher al Escritorio:
+
+```powershell
+powershell -File .\scripts\stage-desktop-launcher.ps1
+```
+
+El entrypoint empaquetado es `com.houdini.monitor.Launcher`.
+
 ## Alcance (Phase 2 + foundation)
 
 | Incluido | Fuera de alcance (por ahora) |
@@ -134,7 +142,6 @@ Artefactos relevantes:
 - `specs/002-phase2-polish/spec.md`
 - `specs/002-phase2-polish/plan.md`
 - `specs/002-phase2-polish/tasks.md`
-- `AGENTS.md` — convenciones del proyecto y flujo Spec Kit
 
 ## Licencia
 

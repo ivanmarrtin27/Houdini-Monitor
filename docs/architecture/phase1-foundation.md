@@ -29,7 +29,7 @@ PulseDeck is the long-term codename/vision. Product name remains **Houdini Monit
 ```
 
 ## Decisions
-1. Keep Gradle — already working and mandated by AGENTS.md.
+1. Keep Gradle — already working and mandated by the project constitution.
 2. Keep product name Houdini Monitor; PulseDeck only in design docs.
 3. Evolve in place under `app/` — no parallel Maven tree.
 4. Phase 1 deps: Jackson + SLF4J/logback only (no SQLite).

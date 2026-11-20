@@ -32,7 +32,7 @@ javafx {
 }
 
 application {
-    mainClass.set("com.houdini.monitor.HoudiniMonitorApp")
+    mainClass.set("com.houdini.monitor.Launcher")
     applicationDefaultJvmArgs = listOf("--enable-native-access=ALL-UNNAMED")
 }
 
@@ -80,7 +80,7 @@ tasks.register<Exec>("jpackage") {
             "--dest", destDir.get().asFile.absolutePath,
             "--input", inputDir.get().asFile.absolutePath,
             "--main-jar", "${packageName}.jar",
-            "--main-class", "com.houdini.monitor.HoudiniMonitorApp",
+            "--main-class", "com.houdini.monitor.Launcher",
             "--java-options", "--enable-native-access=ALL-UNNAMED"
         )
     }
